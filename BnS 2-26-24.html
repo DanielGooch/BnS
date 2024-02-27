@@ -3679,6 +3679,22 @@ on("change:mag-base change:mag-inherent change:mag-enhance change:mag-misc chang
 
 <!-- custom sheet colors-->
 <input type="hidden" class="sheet-options-color" name="attr_options_color" value="0" />
+<input type="hidden" class="sheet-stats-color" name="attr_stats_color" value="0" />
+<input type="hidden" class="sheet-rolls-color" name="attr_rolls_color" value="0" />
+<input type="hidden" class="sheet-abilities-color" name="attr_abilities_color" value="0" />
+<input type="hidden" class="sheet-skills-color" name="attr_skills_color" value="0" />
+<input type="hidden" class="sheet-benefits-color" name="attr_benefits_color" value="0" />
+<input type="hidden" class="sheet-items-color" name="attr_items_color" value="0" />
+<input type="hidden" class="sheet-xp-color" name="attr_xp_color" value="0" />
+<input type="hidden" class="sheet-notes-color" name="attr_notes_color" value="0" />
+<input type="hidden" class="sheet-stats-border" name="attr_stats_border" value="0" />
+<input type="hidden" class="sheet-rolls-border" name="attr_rolls_border" value="0" />
+<input type="hidden" class="sheet-abilities-border" name="attr_abilities_border" value="0" />
+<input type="hidden" class="sheet-skills-border" name="attr_skills_border" value="0" />
+<input type="hidden" class="sheet-benefits-border" name="attr_benefits_border" value="0" />
+<input type="hidden" class="sheet-items-border" name="attr_items_border" value="0" />
+<input type="hidden" class="sheet-xp-border" name="attr_xp_border" value="0" />
+<input type="hidden" class="sheet-notes-border" name="attr_notes_border" value="0" />
 <div class="sheet-wrapper">
 	<div class="sheet-options-loc" style="z-index: 6;"><input type="checkbox" class="sheet-options sheet-button-options" name="attr_options-sheet" value="open" title="Sheet options"><span style="color: black; text-shadow: none;"></span></div>
 	<input type="checkbox" class="sheet-controller sheet-options" name="attr_options-sheet" value="open">
@@ -3713,14 +3729,188 @@ on("change:mag-base change:mag-inherent change:mag-enhance change:mag-misc chang
 			</div>
 			<div class="sheet-options-section" style="float: left; width: 200px;">
 			<ul class="sheet-box-content">
-				<div class="sheet-box-title">Options Colors</div>
+				<div class="sheet-box-title">COLOR OPTIONS</div>
 				<div class="Sheet-box-content">
-				<select name="attr_options_color" style="max-width: fit-content;">
-					<option value="1" default="">Red</option>
-					<option value="2">Destiny</option>
-					<option value="3">Blue</option>
-				</select>
-			    </div>
+				<table>
+					<tr>
+						<td class="sheet-label-left" style="width: 70px;  text-shadow: none; text-align: left;">Options:</td>
+						<td style="width: 130px;">
+							<select name="attr_options_color" style="max-width: fit-content;">
+								<option value="1" >Red</option>
+								<option value="2"default="">Destiny</option>
+								<option value="3">Blue</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="sheet-label-left" style="width: 70px;  text-shadow: none; text-align: left;">Stats:</td>
+						<td style="width: 130px;">
+							<select name="attr_stats_color" style="max-width: fit-content;">
+								<option value="1" >Red</option>
+								<option value="2"default="">Destiny</option>
+								<option value="3">Blue</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="sheet-label-left" style="width: 70px;  text-shadow: none; text-align: left;">Rolls:</td>
+						<td style="width: 130px;">
+							<select name="attr_rolls_color" style="max-width: fit-content;">
+								<option value="1" >Red</option>
+								<option value="2"default="">Destiny</option>
+								<option value="3">Blue</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="sheet-label-left" style="width: 70px;  text-shadow: none; text-align: left;">Abilities:</td>
+						<td style="width: 130px;">
+							<select name="attr_abilities_color" style="max-width: fit-content;">
+								<option value="1" >Red</option>
+								<option value="2"default="">Destiny</option>
+								<option value="3">Blue</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="sheet-label-left" style="width: 70px;  text-shadow: none; text-align: left;">Skills:</td>
+						<td style="width: 130px;">
+							<select name="attr_skills_color" style="max-width: fit-content;">
+								<option value="1" >Red</option>
+								<option value="2"default="">Destiny</option>
+								<option value="3">Blue</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="sheet-label-left" style="width: 70px;  text-shadow: none; text-align: left;">Benefits:</td>
+						<td style="width: 130px;">
+							<select name="attr_benefits_color" style="max-width: fit-content;">
+								<option value="1" >Red</option>
+								<option value="2"default="">Destiny</option>
+								<option value="3">Blue</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="sheet-label-left" style="width: 70px;  text-shadow: none; text-align: left;">Items:</td>
+						<td style="width: 130px;">
+							<select name="attr_items_color" style="max-width: fit-content;">
+								<option value="1" >Red</option>
+								<option value="2"default="">Destiny</option>
+								<option value="3">Blue</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="sheet-label-left" style="width: 70px;  text-shadow: none; text-align: left;">XP:</td>
+						<td style="width: 130px;">
+							<select name="attr_xp_color" style="max-width: fit-content;">
+								<option value="1" >Red</option>
+								<option value="2"default="">Destiny</option>
+								<option value="3">Blue</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="sheet-label-left" style="width: 70px;  text-shadow: none; text-align: left;">Notes:</td>
+						<td style="width: 130px;">
+							<select name="attr_notes_color" style="max-width: fit-content;">
+								<option value="1" >Red</option>
+								<option value="2"default="">Destiny</option>
+								<option value="3">Blue</option>
+							</select>
+						</td>
+					</tr>
+				</div>
+			</ul>
+			</div>
+			<div class="sheet-options-section" style="float: left; width: 200px;">
+			<ul class="sheet-box-content">
+				<div class="sheet-box-title">BORDER COLOR</div>
+				<div class="Sheet-box-content">
+				<table>
+					<tr>
+						<td class="sheet-label-left" style="width: 70px;  text-shadow: none; text-align: left;">Stats:</td>
+						<td style="width: 130px;">
+							<select name="attr_stats_border" style="max-width: fit-content;">
+								<option value="1" >Red</option>
+								<option value="2"default="">White</option>
+								<option value="3">Blue</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="sheet-label-left" style="width: 70px;  text-shadow: none; text-align: left;">Rolls:</td>
+						<td style="width: 130px;">
+							<select name="attr_rolls_border" style="max-width: fit-content;">
+								<option value="1" >Red</option>
+								<option value="2"default="">White</option>
+								<option value="3">Blue</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="sheet-label-left" style="width: 70px;  text-shadow: none; text-align: left;">Abilities:</td>
+						<td style="width: 130px;">
+							<select name="attr_abilities_border" style="max-width: fit-content;">
+								<option value="1" >Red</option>
+								<option value="2"default="">White</option>
+								<option value="3">Blue</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="sheet-label-left" style="width: 70px;  text-shadow: none; text-align: left;">Skills:</td>
+						<td style="width: 130px;">
+							<select name="attr_skills_border" style="max-width: fit-content;">
+								<option value="1" >Red</option>
+								<option value="2"default="">White</option>
+								<option value="3">Blue</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="sheet-label-left" style="width: 70px;  text-shadow: none; text-align: left;">Benefits:</td>
+						<td style="width: 130px;">
+							<select name="attr_benefits_border" style="max-width: fit-content;">
+								<option value="1" >Red</option>
+								<option value="2"default="">White</option>
+								<option value="3">Blue</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="sheet-label-left" style="width: 70px;  text-shadow: none; text-align: left;">Items:</td>
+						<td style="width: 130px;">
+							<select name="attr_items_border" style="max-width: fit-content;">
+								<option value="1" >Red</option>
+								<option value="2"default="">White</option>
+								<option value="3">Blue</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="sheet-label-left" style="width: 70px;  text-shadow: none; text-align: left;">XP:</td>
+						<td style="width: 130px;">
+							<select name="attr_xp_border" style="max-width: fit-content;">
+								<option value="1" >Red</option>
+								<option value="2"default="">White</option>
+								<option value="3">Blue</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="sheet-label-left" style="width: 70px;  text-shadow: none; text-align: left;">Notes:</td>
+						<td style="width: 130px;">
+							<select name="attr_notes_border" style="max-width: fit-content;">
+								<option value="1" >Red</option>
+								<option value="2"default="">White</option>
+								<option value="3">Blue</option>
+							</select>
+						</td>
+					</tr>
+				</div>
 			</ul>
 			</div>
 			<div class="colorGroup">
@@ -3966,12 +4156,12 @@ on("change:mag-base change:mag-inherent change:mag-enhance change:mag-misc chang
 		</div>
 	</div>
 	<div class="sheet-header">
-		<div class="sheet-info-section" style="float: left; width: 60%; text-align: left; color: LightSlateGrey;">
+		<div class="sheet-info-section" style="float: left; width: 60%; text-align: left; color: black;">
 			<table>
 				<tr>
 					<td class="sheet-label-left" style="width: 70px;  text-shadow: none; text-align: left;">Name:</td>
 					<td><input title="Character name" type="text" name="attr_character_name" style="font-family: " Tahoma", "Arial" ;text-align: left;"></td>
-					<td class="sheet-label-top" style="width: 65px;  text-shadow: none; text-align: left;">Sheet Type:</td>
+					<td class= "sheet-label-top" style="width: 65px;  text-shadow: none; text-align: left;">Sheet Type:</td>
 					<td style="width: 130px;">
 						<select name="attr_character_sheet_type">
 							<option value="Character" selected>Character</option>
@@ -4018,7 +4208,7 @@ on("change:mag-base change:mag-inherent change:mag-enhance change:mag-misc chang
 									<option value="shamanism">Shamanism</option>
 									<option value="channelling">Channeling</option>
                                     <option value="sorcery">Sorcery</option>
-                                </select>
+                        </select>
 					</td>
 				</tr>
 			</table>
@@ -4062,9 +4252,9 @@ on("change:mag-base change:mag-inherent change:mag-enhance change:mag-misc chang
 			<li class="sheet-notes"><input type="radio" name="attr_core-tab" value="8" title="Notes">NOTES</li>
 		</ul>
 		<div class="sheet-section-core">
-			<div class="sheet-background sheet-custom-color">
+			<div class="sheet-background sheet-stats-color">
 				<div class="sheet-box-outer" style="width: 45%; height: 275px; float: left; border-right: none; border-bottom: none;">
-					<div class="sheet-box-middle">
+					<div class="sheet-box-middle sheet-stats-border">
 						<div class="sheet-box-inner">
 							<div class="sheet-box-title">PRIMARY STATISTICS</div>
 							<div class="sheet-box-content">
@@ -4154,8 +4344,8 @@ on("change:mag-base change:mag-inherent change:mag-enhance change:mag-misc chang
 						</div>
 					</div>
 				</div>
-				<div class="sheet-box-outer" style="width: 55%; height: 100px; float: left; border-right: none; border-bottom: none;">
-					<div class="sheet-box-middle">
+				<div class="sheet-box-outer" style="width: 55%; height: 100px; float: left; border-bottom: none;">
+					<div class="sheet-box-middle sheet-stats-border">
 						<div class="sheet-box-inner">
 							<div class="sheet-box-title">Resistances</div>
 							<div class="sheet-box-content">
@@ -4185,8 +4375,8 @@ on("change:mag-base change:mag-inherent change:mag-enhance change:mag-misc chang
 						</div>
 					</div>
 				</div>
-				<div class="sheet-box-outer" style="width: 55%; height: 175px; float: left; border-right: none; border-bottom: none;">
-					<div class="sheet-box-middle">
+				<div class="sheet-box-outer" style="width: 55%; height: 175px; float: left; border-bottom: none;">
+					<div class="sheet-box-middle sheet-stats-border">
 						<div class="sheet-box-inner">
 							<div class="sheet-box-title">ARMOR FEATURES</div>
 							<div class="sheet-box-content">
@@ -4245,8 +4435,8 @@ on("change:mag-base change:mag-inherent change:mag-enhance change:mag-misc chang
 					</div>
 				</div>
 				<div style="clear: both;"></div>
-				<div class="sheet-box-outer" style="width: 45%; float: left; border-right: none; border-bottom: none; height: 172px;">
-					<div class="sheet-box-middle">
+				<div class="sheet-box-outer" style="width: 45%; float: left; border-right: none; height: 172px;">
+					<div class="sheet-box-middle sheet-stats-border">
 						<div class="sheet-box-inner">
 							<div class="sheet-box-title">SECONDARY STATISTICS</div>
 							<div class="sheet-box-content">
@@ -4315,8 +4505,8 @@ on("change:mag-base change:mag-inherent change:mag-enhance change:mag-misc chang
 						</div>
 					</div>
 				</div>
-				<div class="sheet-box-outer" style="width: 55%; height: 172px; float: right; border-bottom: none;">
-					<div class="sheet-box-middle">
+				<div class="sheet-box-outer" style="width: 55%; height: 172px; float: right;">
+					<div class="sheet-box-middle sheet-stats-border">
 						<div class="sheet-box-inner">
 							<div class="sheet-box-title">TOTAL DEFENSE</div>
 							<div class="sheet-box-content">
@@ -4369,9 +4559,9 @@ on("change:mag-base change:mag-inherent change:mag-enhance change:mag-misc chang
 			</div>
 		</div>
 		<div class="sheet-section-combat">
-			<div class="sheet-background">
+			<div class="sheet-background sheet-rolls-color">
 				<div class="sheet-box-outer" style="width: 100%; height: 100px; float: left; border-bottom: none;">
-					<div class="sheet-box-middle">
+					<div class="sheet-box-middle sheet-rolls-border">
 						<div class="sheet-box-inner">
 								<div class="sheet-box-title">QUICK ROLLS</div>
 								<table>
@@ -4393,7 +4583,7 @@ on("change:mag-base change:mag-inherent change:mag-enhance change:mag-misc chang
 				</div>
 				<div style="clear: both;"></div>
 				<div class="sheet-box-outer" style="width: 100%;">
-					<div class="sheet-box-middle">
+					<div class="sheet-box-middle sheet-rolls-border">
 						<div class="sheet-box-inner">
 							<div class="sheet-box-title">Attacks</div>
 							<div class="sheet-box-content">
@@ -4445,9 +4635,11 @@ on("change:mag-base change:mag-inherent change:mag-enhance change:mag-misc chang
 			</div>
 		</div>
 		<div class="sheet-section-class">
-			<div class="sheet-background">
-				<div class="sheet-box-outer" style="width: 100%; float: left; border-right: none; border-bottom: none;">
+			<div class="sheet-background sheet-xp-color">
+				<div class="sheet-box-outer" style="width: 100%; float: left; border-bottom: none;">
+					<div class="sheet-box-middle sheet-xp-border">
 					<div class="sheet-box-title">EXPERIENCE</div>
+						<div class="sheet-box-inner">	
 							<div class="sheet-box-content">
 								<table>
 									<tr>
@@ -4489,9 +4681,11 @@ on("change:mag-base change:mag-inherent change:mag-enhance change:mag-misc chang
 									</tr>
 								</table>
 							</div>
+					    </div>
 					</div>
-					<div class="sheet-box-outer" style="width: 50%; float: left; border-right: none; border-bottom: none;">
-					<div class="sheet-box-middle">
+					</div>
+					<div class="sheet-box-outer" style="width: 50%; float: left;">
+					<div class="sheet-box-middle sheet-xp-border">
 						<div class="sheet-box-inner">
 							<div class="sheet-box-title">General Experience(GXP) Spend</div>
 							<div class="sheet-box-content">
@@ -4514,8 +4708,8 @@ on("change:mag-base change:mag-inherent change:mag-enhance change:mag-misc chang
 						<div style="clear: both;"></div>
 					</div>
 				</div>
-				<div class="sheet-box-outer" style="width: 50%; float: right; border-bottom: none;">
-					<div class="sheet-box-middle">
+				<div class="sheet-box-outer" style="width: 50%; float: right;">
+					<div class="sheet-box-middle sheet-xp-border">
 						<div class="sheet-box-inner">
 							<div class="sheet-box-title">Skill Experience(SXP) Spend</div>
 							<div class="sheet-box-content">
@@ -4539,18 +4733,12 @@ on("change:mag-base change:mag-inherent change:mag-enhance change:mag-misc chang
 					</div>
 				</div>
 				<div style="clear: both;"></div>
-				<div class="sheet-box-outer" style="width: 100%;">
-					<div class="sheet-box-middle">
-						<div class="sheet-box-inner">							
-						</div>
-					</div>
-				</div>
 			</div>
 		</div>
 		<div class="sheet-section-items">
-			<div class="sheet-background">
-                <div class="sheet-box-outer" style="width: 100%; float: right; border-right: none; border-bottom: none;">
-					<div class="sheet-box-middle">
+			<div class="sheet-background sheet-items-color">
+                <div class="sheet-box-outer" style="width: 100%; float: right;">
+					<div class="sheet-box-middle sheet-items-border">
 						<div class="sheet-box-inner">
 							<div class="sheet-box-title">INVENTORY</div>
 							<div class="sheet-box-content">
@@ -4585,18 +4773,12 @@ on("change:mag-base change:mag-inherent change:mag-enhance change:mag-misc chang
 					</div>
 				</div>
 			    <div style="clear: both;"></div>
-				<div class="sheet-box-outer" style="width: 100%;">
-					<div class="sheet-box-middle">
-						<div class="sheet-box-inner">							
-						</div>
-					</div>
-				</div>
 			</div>
 		</div>
 		<div class="sheet-section-skills">
-			<div class="sheet-background" style="width: 100%;">
+			<div class="sheet-background sheet-skills-color" style="width: 100%;">
 				<div class="sheet-box-outer">
-					<div class="sheet-box-middle">
+					<div class="sheet-box-middle sheet-skills-border">
 						<div class="sheet-box-inner">
 							<div class="sheet-box-title">SKILLS</div>
 							<div class="sheet-box-content">
@@ -5517,11 +5699,7 @@ on("change:mag-base change:mag-inherent change:mag-enhance change:mag-misc chang
 										<td><span class="sheet-cs-show" name="attr_intimidate-bonus"></span></td>
 										<td class="sheet-data-skill"></td>
 										<td class="sheet-data-skill"><input title="@{intimidate-notes}" type="text" name="attr_intimidate-notes"></td>
-									</tr>
-								</table>	
-
-							
-								<table class="sheet-table-skill">    									
+									</tr>   									
 									<tr class="sheet-table-row-skill">
 										<td style="min-width: 24px; width: 24px;"><button class="sheet-text-button" title="Leadership check roll [Total d10 success=8+ roll 10again]" type="roll" name="roll_Leadership-check" value="@{gmroll} &{template:roll-check} {{charName=@{character_name}}} {{rollType=Skill Check}} {{rollTypeName=Leadership}} {{result=[[[[{@{leadership-total} + ?{Modifiers?|0},1}kh1]]d10!>10>8]]}} {{notes=@{leadership-notes}}}"></button></td>
 										<td style="min-width: 35px; width: 35px;"><button class="sheet-text-button" title="Leadership check roll [Total d10 success=8+ roll 9+again]" type="roll" name="roll_Leadership-9Again" value="@{gmroll} &{template:roll-check} {{charName=@{character_name}}} {{rollType=Skill Check}} {{rollTypeName=Leadership}} {{result=[[[[{@{leadership-total} + ?{Modifiers?|0},1}kh1]]d10!>9>8]]}} {{notes=@{leadership-notes}}}"></button></td>
@@ -5811,9 +5989,9 @@ on("change:mag-base change:mag-inherent change:mag-enhance change:mag-misc chang
 			</div>
 		</div>
 		<div class="sheet-section-feats">
-			<div class="sheet-background">
+			<div class="sheet-background sheet-benefits-color">
 				<div class="sheet-box-outer" style="width: 100%;">
-					<div class="sheet-box-middle">
+					<div class="sheet-box-middle sheet-benefits-border">
 						<div class="sheet-box-inner">
 							<div class="sheet-box-title">BENEFITS</div>
 							<div class="sheet-box-content">
@@ -5851,9 +6029,9 @@ on("change:mag-base change:mag-inherent change:mag-enhance change:mag-misc chang
 			</div>
 		</div>
 		<div class="sheet-section-spells">
-			<div class="sheet-background">
+			<div class="sheet-background sheet-abilities-color">
 				<div class="sheet-box-outer" style="width: 100%;">
-					<div class="sheet-box-middle">
+					<div class="sheet-box-middle sheet-abilities-border">
 						<div class="sheet-box-inner">
 							<div class="sheet-box-title">Abilities</div>
 							<div class="sheet-box-content">
@@ -6332,9 +6510,9 @@ on("change:mag-base change:mag-inherent change:mag-enhance change:mag-misc chang
 		</div>
 
 		<div class="sheet-section-notes">
-			<div class="sheet-background">
+			<div class="sheet-background sheet-notes-color">
 				<div class="sheet-box-outer" style="width: 100%;">
-					<div class="sheet-box-middle">
+					<div class="sheet-box-middle sheet-notes-border">
 						<div class="sheet-box-inner">
 							<div class="sheet-box-title">NOTES</div>
 							<div class="sheet-box-content">

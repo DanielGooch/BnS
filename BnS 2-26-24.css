@@ -376,9 +376,9 @@
      color: yellow;
  }
  .sheet-wrapper {
-     float: right;
-	 width: 100%;
-	 vertical-align: top;
+     background-color: rgba(94,94,94,.05);
+	 vertical-align: 100px;
+	 width: 105%;
 	--color1: rgba(var(--redOne),var(--greenOne), var(--blueOne), 1.00);
      --color2: rgba(var(--redTwo),var(--greenTwo), var(--blueTwo), 1.00);
      --color3: rgba(var(--redThree),var(--greenThree), var(--blueThree), 1.00);
@@ -443,10 +443,12 @@
      background: rgb(38, 35, 230);  Old browsers 
      background: -moz-linear-gradient(-45deg, rgba(38, 35, 230, .85) 20%, rgba(1,0,12,1) 100%);        FF3.6-15 
      background: -webkit-linear-gradient(-45deg, rgba(38, 35, 230, 1) 20%,rgba(1,0,12,1) 100%); Chrome10-25,Safari5.1-6 
-     */
+	 background: -webkit-linear-gradient(-25deg, rgba(217, 217, 255, 1) 20%,rgba(1,0,12,.75) 100%);
+	 background: -webkit-linear-gradient(-25deg, rgba(147, 112, 219, 1) 20%,rgba(52,201,102,.75) 100%);
+	*/
      --average: #ccc;
      --average: rgb(calc( ( var(--redOne) + var(--redFour) ) / 2 ), calc( ( var(--greenOne) + var(--greenFour) ) / 2 ), calc( ( var(--blueOne) + var(--blueFour) ) / 2 ) );
-     background: -webkit-linear-gradient(-25deg, rgba(217, 217, 255, 1) 20%,rgba(1,0,12,.75) 100%);
+     /*background: -webkit-linear-gradient(-25deg, rgba(217, 217, 255, 1) 20%,rgba(1,0,12,.75) 100%);*/
      background-color: var(--average);
      color: var(--bordered-text);
      text-shadow:  var(--highlight-shadow);
@@ -457,20 +459,20 @@
  }
  
  .sheet-box-outer {
-     border: 1px solid black;
-     border-radius: 5px;
+     border: 3px solid ;
+     border-radius: 3px;
      height: 100%;
  }
  
  .sheet-box-middle {
-     border: 2px solid lightgrey;
-     border-radius: 4px;
+     border: 1px solid ;
+     border-radius: 2px;
      height: 100%;
  }
  
  .sheet-box-inner {
      border: 1px solid black;
-     border-radius: 3px;
+     border-radius: 2px;
      height: 100%;
      position: relative;
  }
@@ -483,7 +485,7 @@
  }
  
  .sheet-box-content {
-     background-color: transparent;
+     background: initial;
 	 padding: 2px;
  }
  
@@ -1296,19 +1298,242 @@
      margin: 0 -5px 0 0;
      line-height: 14px;
  }
- /* custom sheet colors */
-  .charsheet input.sheet-options-color[value="1"] ~ .sheet-wrapper .sheet-custom-color * {
+ /* custom options colors */
+  .charsheet input.sheet-options-color[value="1"] ~ .sheet-wrapper .sheet-custom-color  {
    background-color: red;
    color: white;
  }
 
-  .charsheet input.sheet-options-color[value="2"] ~ .sheet-wrapper .sheet-custom-color * {
-   background:  linear-gradient(45deg, rgba(147,112,219,.65) 41%,rgba(52,201,102,.25) 100%);
+  .charsheet input.sheet-options-color[value="2"] ~ .sheet-wrapper .sheet-custom-color  {
+   background: -webkit-linear-gradient(-25deg, rgba(147, 112, 219, 1) 20%,rgba(52,201,102,.75) 100%);
    color:black;
    border-color: grey;
  }
 
-  .charsheet input.sheet-options-color[value="3"] ~ .sheet-wrapper .sheet-custom-color * {
+  .charsheet input.sheet-options-color[value="3"] ~ .sheet-wrapper .sheet-custom-color  {
    background-color: blue;
    color: white;
+ }
+ /* custom Stats Tab colors */ 
+ .charsheet input.sheet-stats-color[value="1"] ~ .sheet-wrapper .sheet-stats-color  {
+   background-color: red;
+   color: white;
+ }
+
+  .charsheet input.sheet-stats-color[value="2"] ~ .sheet-wrapper .sheet-stats-color  {
+   background: -webkit-linear-gradient(-25deg, rgba(147, 112, 219, 1) 20%,rgba(52,201,102,.75) 100%);
+   color:black;
+   border-color: blue;
+ }
+
+  .charsheet input.sheet-stats-color[value="3"] ~ .sheet-wrapper .sheet-stats-color  {
+   background-color: blue;
+   color: white;
+ }
+  /* custom Rolls Tab colors */
+   .charsheet input.sheet-rolls-color[value="1"] ~ .sheet-wrapper .sheet-rolls-color  {
+   background-color: red;
+   color: white;
+ }
+
+  .charsheet input.sheet-rolls-color[value="2"] ~ .sheet-wrapper .sheet-rolls-color  {
+   background: -webkit-linear-gradient(-25deg, rgba(147, 112, 219, 1) 20%,rgba(52,201,102,.75) 100%);
+   color:black;
+ }
+
+  .charsheet input.sheet-rolls-color[value="3"] ~ .sheet-wrapper .sheet-rolls-color  {
+   background-color: blue;
+   color: white;
+ }
+   /* custom Abilities Tab colors */
+   .charsheet input.sheet-abilities-color[value="1"] ~ .sheet-wrapper .sheet-abilities-color  {
+   background-color: red;
+   color: white;
+ }
+
+  .charsheet input.sheet-abilities-color[value="2"] ~ .sheet-wrapper .sheet-abilities-color  {
+   background: -webkit-linear-gradient(-25deg, rgba(147, 112, 219, 1) 20%,rgba(52,201,102,.75) 100%);
+   color:black;
+   border-color: grey;
+ }
+
+  .charsheet input.sheet-abilities-color[value="3"] ~ .sheet-wrapper .sheet-abilities-color  {
+   background-color: blue;
+   color: white;
+ }
+    /* custom Skills Tab colors */
+   .charsheet input.sheet-skills-color[value="1"] ~ .sheet-wrapper .sheet-skills-color  {
+   background-color: red;
+   color: white;
+ }
+
+  .charsheet input.sheet-skills-color[value="2"] ~ .sheet-wrapper .sheet-skills-color  {
+   background: -webkit-linear-gradient(-25deg, rgba(147, 112, 219, 1) 20%,rgba(52,201,102,.75) 100%);
+   color:black;
+   border-color: grey;
+ }
+
+  .charsheet input.sheet-skills-color[value="3"] ~ .sheet-wrapper .sheet-skills-color  {
+   background-color: blue;
+   color: white;
+ }
+     /* custom Benefits Tab colors */
+   .charsheet input.sheet-benefits-color[value="1"] ~ .sheet-wrapper .sheet-benefits-color  {
+   background-color: red;
+   color: white;
+ }
+
+  .charsheet input.sheet-benefits-color[value="2"] ~ .sheet-wrapper .sheet-benefits-color  {
+   background: -webkit-linear-gradient(-25deg, rgba(147, 112, 219, 1) 20%,rgba(52,201,102,.75) 100%);
+   color:black;
+   border-color: grey;
+ }
+
+  .charsheet input.sheet-benefits-color[value="3"] ~ .sheet-wrapper .sheet-benefits-color  {
+   background-color: blue;
+   color: white;
+ }
+      /* custom Items Tab colors */
+   .charsheet input.sheet-items-color[value="1"] ~ .sheet-wrapper .sheet-items-color  {
+   background-color: red;
+   color: white;
+ }
+
+  .charsheet input.sheet-items-color[value="2"] ~ .sheet-wrapper .sheet-items-color  {
+   background: -webkit-linear-gradient(-25deg, rgba(147, 112, 219, 1) 20%,rgba(52,201,102,.75) 100%);
+   color:black;
+   border-color: grey;
+ }
+
+  .charsheet input.sheet-items-color[value="3"] ~ .sheet-wrapper .sheet-items-color  {
+   background-color: blue;
+   color: white;
+ }
+       /* custom XP Tab colors */
+   .charsheet input.sheet-xp-color[value="1"] ~ .sheet-wrapper .sheet-xp-color  {
+   background-color: red;
+   color: white;
+ }
+
+  .charsheet input.sheet-xp-color[value="2"] ~ .sheet-wrapper .sheet-xp-color  {
+   background: -webkit-linear-gradient(-25deg, rgba(147, 112, 219, 1) 20%,rgba(52,201,102,.75) 100%);
+   color:black;
+   border-color: grey;
+ }
+
+  .charsheet input.sheet-xp-color[value="3"] ~ .sheet-wrapper .sheet-xp-color  {
+   background-color: blue;
+   color: white;
+ }
+        /* custom Notes Tab colors */
+   .charsheet input.sheet-notes-color[value="1"] ~ .sheet-wrapper .sheet-notes-color  {
+   background-color: red;
+   color: white;
+ }
+
+  .charsheet input.sheet-notes-color[value="2"] ~ .sheet-wrapper .sheet-notes-color  {
+   background: -webkit-linear-gradient(-25deg, rgba(147, 112, 219, 1) 20%,rgba(52,201,102,.75) 100%);
+   color:black;
+   border-color: grey;
+ }
+
+  .charsheet input.sheet-notes-color[value="3"] ~ .sheet-wrapper .sheet-notes-color  {
+   background-color: blue;
+   color: white;
+ }
+  /* custom Stats Tab border */ 
+ .charsheet input.sheet-stats-border[value="1"] ~ .sheet-wrapper .sheet-stats-border  {
+	border-color: red;
+ }
+
+  .charsheet input.sheet-stats-border[value="2"] ~ .sheet-wrapper .sheet-stats-border  {
+	border-color: white;
+ }
+
+  .charsheet input.sheet-stats-border[value="3"] ~ .sheet-wrapper .sheet-stats-border  {
+	border-color: blue;
+ }
+  /* custom Rolls Tab border */
+   .charsheet input.sheet-rolls-border[value="1"] ~ .sheet-wrapper .sheet-rolls-border  {
+	border-color: red;
+ }
+
+  .charsheet input.sheet-rolls-border[value="2"] ~ .sheet-wrapper .sheet-rolls-border  {
+	border-color: white;
+ }
+
+  .charsheet input.sheet-rolls-border[value="3"] ~ .sheet-wrapper .sheet-rolls-border  {
+	border-color: blue;
+ }
+   /* custom Abilities Tab border */
+   .charsheet input.sheet-abilities-border[value="1"] ~ .sheet-wrapper .sheet-abilities-border  {
+	border-color: red;
+ }
+
+  .charsheet input.sheet-abilities-border[value="2"] ~ .sheet-wrapper .sheet-abilities-border  {
+	border-color: white;
+ }
+
+  .charsheet input.sheet-abilities-border[value="3"] ~ .sheet-wrapper .sheet-abilities-border  {
+	border-color: blue;
+ }
+    /* custom Skills Tab border */
+   .charsheet input.sheet-skills-border[value="1"] ~ .sheet-wrapper .sheet-skills-border  {
+	border-color: red;
+ }
+
+  .charsheet input.sheet-skills-border[value="2"] ~ .sheet-wrapper .sheet-skills-border  {
+	border-color: white;
+ }
+
+  .charsheet input.sheet-skills-border[value="3"] ~ .sheet-wrapper .sheet-skills-border  {
+	border-color: blue;
+ }
+     /* custom Benefits Tab border */
+   .charsheet input.sheet-benefits-border[value="1"] ~ .sheet-wrapper .sheet-benefits-border  {
+	border-color: red;
+ }
+
+  .charsheet input.sheet-benefits-border[value="2"] ~ .sheet-wrapper .sheet-benefits-border  {
+	border-color: white;
+ }
+
+  .charsheet input.sheet-benefits-border[value="3"] ~ .sheet-wrapper .sheet-benefits-border  {
+	border-color: blue;
+ }
+      /* custom Items Tab border */
+   .charsheet input.sheet-items-border[value="1"] ~ .sheet-wrapper .sheet-items-border  {
+	border-color: red;
+ }
+
+  .charsheet input.sheet-items-border[value="2"] ~ .sheet-wrapper .sheet-items-border  {
+	border-color: white;
+ }
+
+  .charsheet input.sheet-items-border[value="3"] ~ .sheet-wrapper .sheet-items-border  {
+	border-color: blue;
+ }
+       /* custom XP Tab border */
+   .charsheet input.sheet-xp-border[value="1"] ~ .sheet-wrapper .sheet-xp-border  {
+	border-color: red;
+ }
+
+  .charsheet input.sheet-xp-border[value="2"] ~ .sheet-wrapper .sheet-xp-border  {
+	border-color: white;
+ }
+
+  .charsheet input.sheet-xp-border[value="3"] ~ .sheet-wrapper .sheet-xp-border  {
+	border-color: blue;
+ }
+        /* custom Notes Tab border */
+   .charsheet input.sheet-notes-border[value="1"] ~ .sheet-wrapper .sheet-notes-border  {
+	border-color: red;
+ }
+
+  .charsheet input.sheet-notes-border[value="2"] ~ .sheet-wrapper .sheet-notes-border  {
+	border-color: white;
+ }
+
+  .charsheet input.sheet-notes-border[value="3"] ~ .sheet-wrapper .sheet-notes-border  {
+	border-color: blue;
  }
