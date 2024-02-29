@@ -4613,7 +4613,7 @@ on("change:mag-base change:mag-inherent change:mag-enhance change:mag-misc chang
 										<td class="sheet-label-top"></td>
 										<td class="sheet-label-top"></td>
 										<td class="sheet-label-top">Total</td>
-										<td class="sheet-label-top">WIL</td>
+										
 										<td class="sheet-label-top">Misc</td>
 									</tr>
 									<tr>
@@ -4624,7 +4624,7 @@ on("change:mag-base change:mag-inherent change:mag-enhance change:mag-misc chang
 										<td><button class="sheet-text-button" title="Initiative roll [1d10 + total initiative bonus]" type="roll" name="roll_Init" value="@{gmroll} &{template:roll-check} {{charName=@{character_name}}} {{rollType=Combat}} {{rollTypeName=Initiative}} {{result=[[1d10+@{init-total} &{tracker}]]}}"></button></td>
 									    <td style="font-weight: bold;" class="sheet-label-left">Initiative:</td>
 									    <td><input class="sheet-total" title="@{init-total}" type="number" name="attr_init-total" value=0 readonly></td>
-										<td><input title="@{wil-mod}" type="number" name="attr_wil-mod" value=0 readonly></td>
+										
 										<td><input title="@{init-misc}" type="number" name="attr_init-misc" value=0></td>
 									</tr>
 									<tr class="sheet-mp-row">
@@ -4635,7 +4635,7 @@ on("change:mag-base change:mag-inherent change:mag-enhance change:mag-misc chang
 									    <td></td>
 									    <td></td>
 										<td class="sheet-label-top">Land</td>
-										<td></td>
+
 										<td class="sheet-label-top">Air</td>
 									</tr>
 									<tr class="sheet-mp-row">
@@ -4646,7 +4646,7 @@ on("change:mag-base change:mag-inherent change:mag-enhance change:mag-misc chang
 									    <td></td>									
 									    <td style="font-weight: bold; text-align=right;">Speed:</td>
 									    <td><input title="@{speed-base}" type="number" name="attr_speed-base" value=0></td>
-										<td></td>
+
 										<td><input title="@{speed-fly}" type="number" name="attr_speed-fly" value=0></td>
 									</tr>									
 									<tr class="sheet-mp-row">
@@ -4657,7 +4657,7 @@ on("change:mag-base change:mag-inherent change:mag-enhance change:mag-misc chang
 									    <td></td>
 										<td style="font-weight: bold; text-align=right;">Dodge Stat:</td>									
 									    <td><input style="width: 25px;" title="Dodge" type="number" name="attr_dodge" value="0" ></td></td>
-										<td></td>
+
 										<td></td>
 									</tr>									
 								</table>
