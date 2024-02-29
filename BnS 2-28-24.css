@@ -877,7 +877,6 @@
  
  
  input[type=text] {
-     color: var(--simple-text);
      width: 100%;
      text-align: left;
      border: 1px solid var(--highlight-text);
@@ -894,7 +893,6 @@
      box-shadow: none !important;
      background-color: var(--highlight-background);
      font-family: var(--fonts);
-     color: var(--bordered-text);
      text-align: center;
      text-shadow: var(--highlight-shadow);
      vertical-align: middle;
@@ -944,7 +942,6 @@
      padding-top: 3px;
      margin: 0px;
      vertical-align: middle;
-     color: black;
  }
  
  /*button[type=roll]:hover {
@@ -957,7 +954,6 @@
      border: 1px solid var(--highlight-text);
      height: 100%;
      font-family: var(--fonts);
-     color: var(--simple-text);
      border-radius: 0px;
      margin: 0px;
      padding: 2px 4px 2px 4px;
@@ -968,7 +964,7 @@
  textarea.sheet-notes {
      border: 1px solid var(--highlight-text);
      height: 100%;
-     font-family: var(--fonts);
+	 font-family: var(--fonts);
      border-radius: 0px;
      margin: 0px;
      padding: 2px 4px 2px 4px;
@@ -984,7 +980,6 @@
  
  textarea:focus {
      background-color: var(--highlight-text);
-     color:var(--shadow-color);
  }
  
  input[type="checkbox"].sheet-expander {
@@ -1194,7 +1189,7 @@
  .sheet-rolltemplate-roll-check .sheet-box-middle,
  .sheet-rolltemplate-special .sheet-box-middle,
  .sheet-rolltemplate-spell .sheet-box-middle {
-     border: 2px solid lightgrey;
+     border: 2px solid ;
      border-radius: 4px;
  }
  
@@ -1300,121 +1295,115 @@
  /* custom options colors */
   .charsheet input.sheet-options-color[value="1"] ~ .sheet-wrapper .sheet-custom-color  {
    background: linear-gradient(135deg,  #ffa07a 4%,#ffa07a 5%,#faf0e6 5%,#faf0e6 7%,#ffa07a 7%,#dd4d4d 92%,#dd4d4d 93%,#faf0e6 93%,#faf0e6 95%,#dd4d4d 95%); /*Paia*/
-
  }
 
   .charsheet input.sheet-options-color[value="2"] ~ .sheet-wrapper .sheet-custom-color  {
    background: -webkit-linear-gradient(-25deg, rgba(147, 112, 219, 1) 20%,rgba(52,201,102,.75) 100%);/*Destiny*/
-
  }
 
   .charsheet input.sheet-options-color[value="3"] ~ .sheet-wrapper .sheet-custom-color  {
    background: linear-gradient(135deg, #ea9c1e 16%,#f86248 29%,#eb2801 41%,#ff6701 55%,#3f0c00 85%);/*fire*/
-
  }
  
    .charsheet input.sheet-options-color[value="4"] ~ .sheet-wrapper .sheet-custom-color  {
    background: radial-gradient(ellipse at center, #ffffff 48%,#f0ead6 98%,#f0ead6 98%);/*adept*/
-
  }
 
   .charsheet input.sheet-options-color[value="5"] ~ .sheet-wrapper .sheet-custom-color  {
    background: radial-gradient(ellipse at center, rgba(15,100,211,1) 0%,rgba(2,47,102,1) 100%);/*channeling*/
-
  }
 
   .charsheet input.sheet-options-color[value="6"] ~ .sheet-wrapper .sheet-custom-color  {
    background: radial-gradient(ellipse at center, #a90329 0%,#8f0222 44%,#6d0019 100%); /*magecraft*/
-
  }
  
    .charsheet input.sheet-options-color[value="7"] ~ .sheet-wrapper .sheet-custom-color  {
    background: radial-gradient(ellipse at center, rgba(98,125,77,1) 0%,rgba(31,59,8,1) 100%);/*shamanism*/
-
  }
 
   .charsheet input.sheet-options-color[value="8"] ~ .sheet-wrapper .sheet-custom-color  {
    background: radial-gradient(ellipse at center, rgba(61,61,61,1) 0%,rgba(0,0,0,1) 98%);/*sorcery*/
-
  }
 
   .charsheet input.sheet-options-color[value="9"] ~ .sheet-wrapper .sheet-custom-color  {
-   background: linear-gradient(135deg, #111111 6%,#ff0000 28%,#00ff00 54%,#2989d8 75%,#ffffff 93%);/*rainbow*/
-
+   background-color: #BDBFB4;/*JackBurble*/
  }
  
+  .charsheet input.sheet-options-color[value="10"] ~ .sheet-wrapper .sheet-custom-color  {
+   background: linear-gradient(135deg, rgba(0,116,217,0.75) 0%,rgba(0,116,217,0.75) 30%,rgba(255,158,79,0.75) 80%,rgba(255,158,79,0.75) 100%); /*Colorblind friendly*/
+ }
+
+  .charsheet input.sheet-options-color[value="11"] ~ .sheet-wrapper .sheet-custom-color  {
+   background: linear-gradient(135deg,  rgba(44,59,82,1) 13%,rgba(103,102,115,1) 36%,rgba(131,133,129,1) 61%,rgba(172,170,142,1) 80%,rgba(225,214,167,1) 95%); /*storm*/
+ }
+
  /* custom Stats Tab colors */ 
  .charsheet input.sheet-stats-color[value="1"] ~ .sheet-wrapper .sheet-stats-color  {
    background: linear-gradient(135deg,  #ffa07a 4%,#ffa07a 5%,#faf0e6 5%,#faf0e6 7%,#ffa07a 7%,#dd4d4d 92%,#dd4d4d 93%,#faf0e6 93%,#faf0e6 95%,#dd4d4d 95%); /*Paia*/
-
  }
 
   .charsheet input.sheet-stats-color[value="2"] ~ .sheet-wrapper .sheet-stats-color  {
     background: -webkit-linear-gradient(-25deg, rgba(147, 112, 219, 1) 20%,rgba(52,201,102,.75) 100%);/*Destiny*/
-
  }
 
   .charsheet input.sheet-stats-color[value="3"] ~ .sheet-wrapper .sheet-stats-color  {
    background: linear-gradient(135deg, #ea9c1e 16%,#f86248 29%,#eb2801 41%,#ff6701 55%,#3f0c00 85%);/*fire*/
-
  }
+
   .charsheet input.sheet-stats-color[value="4"] ~ .sheet-wrapper .sheet-stats-color  {
    background: radial-gradient(ellipse at center, #ffffff 48%,#f0ead6 98%,#f0ead6 98%);/*adept*/
-
  }
 
   .charsheet input.sheet-stats-color[value="5"] ~ .sheet-wrapper .sheet-stats-color  {
    background: radial-gradient(ellipse at center, rgba(15,100,211,1) 0%,rgba(2,47,102,1) 100%);/*channeling*/
-
  }
 
   .charsheet input.sheet-stats-color[value="6"] ~ .sheet-wrapper .sheet-stats-color  {
    background: radial-gradient(ellipse at center, #a90329 0%,#8f0222 44%,#6d0019 100%); /*magecraft*/
-
  }
+
  .charsheet input.sheet-stats-color[value="7"] ~ .sheet-wrapper .sheet-stats-color  {
   background: radial-gradient(ellipse at center, rgba(98,125,77,1) 0%,rgba(31,59,8,1) 100%);/*shamanism*/
-
  }
 
   .charsheet input.sheet-stats-color[value="8"] ~ .sheet-wrapper .sheet-stats-color  {
    background: radial-gradient(ellipse at center, rgba(61,61,61,1) 0%,rgba(0,0,0,1) 98%);/*sorcery*/
-
  }
 
   .charsheet input.sheet-stats-color[value="9"] ~ .sheet-wrapper .sheet-stats-color  {
-   background: radial-gradient(ellipse at center,  rgba(123,33,50,1) 41%,rgba(42,57,71,1) 82%,rgba(42,57,71,1) 86%,rgba(198,141,79,1) 87%,rgba(198,141,79,1) 87%,rgba(234,185,86,1) 89%,rgba(234,185,86,1) 89%,rgba(239,228,186,1) 90%,rgba(239,228,186,1) 90%,rgba(239,228,186,1) 90%,rgba(198,141,79,1) 92%,rgba(198,141,79,1) 92%,rgba(42,57,71,1) 92%,rgba(42,57,71,1) 100%);
-
-
+   background-color: #BDBFB4;/*JackBurble*/
+} 
+  
+ .charsheet input.sheet-stats-color[value="10"] ~ .sheet-wrapper .sheet-stats-color  {
+   background: linear-gradient(135deg, rgba(0,116,217,0.75) 0%,rgba(0,116,217,0.75) 30%,rgba(255,158,79,0.75) 80%,rgba(255,158,79,0.75) 100%); /*Colorblind friendly*/
+ }
+  
+  .charsheet input.sheet-stats-color[value="11"] ~ .sheet-wrapper .sheet-stats-color  {
+   background: linear-gradient(135deg,  rgba(44,59,82,1) 13%,rgba(103,102,115,1) 36%,rgba(131,133,129,1) 61%,rgba(172,170,142,1) 80%,rgba(225,214,167,1) 95%); /*storm*/
  } 
+  
   /* custom Rolls Tab colors */
    .charsheet input.sheet-rolls-color[value="1"] ~ .sheet-wrapper .sheet-rolls-color  {
    background: linear-gradient(135deg,  #ffa07a 4%,#ffa07a 5%,#faf0e6 5%,#faf0e6 7%,#ffa07a 7%,#dd4d4d 92%,#dd4d4d 93%,#faf0e6 93%,#faf0e6 95%,#dd4d4d 95%); /*Paia*/
-
  }
 
   .charsheet input.sheet-rolls-color[value="2"] ~ .sheet-wrapper .sheet-rolls-color  {
     background: -webkit-linear-gradient(-25deg, rgba(147, 112, 219, 1) 20%,rgba(52,201,102,.75) 100%);/*Destiny*/
-
  }
 
   .charsheet input.sheet-rolls-color[value="3"] ~ .sheet-wrapper .sheet-rolls-color  {
    background: linear-gradient(135deg, #ea9c1e 16%,#f86248 29%,#eb2801 41%,#ff6701 55%,#3f0c00 85%);/*fire*/
-
  }
    .charsheet input.sheet-rolls-color[value="4"] ~ .sheet-wrapper .sheet-rolls-color  {
    background: radial-gradient(ellipse at center, #ffffff 48%,#f0ead6 98%,#f0ead6 98%);/*adept*/
-
  }
 
   .charsheet input.sheet-rolls-color[value="5"] ~ .sheet-wrapper .sheet-rolls-color  {
    background: radial-gradient(ellipse at center, rgba(15,100,211,1) 0%,rgba(2,47,102,1) 100%);/*channeling*/
-
  }
 
   .charsheet input.sheet-rolls-color[value="6"] ~ .sheet-wrapper .sheet-rolls-color  {
    background: radial-gradient(ellipse at center, #a90329 0%,#8f0222 44%,#6d0019 100%); /*magecraft*/
-
  }
    .charsheet input.sheet-rolls-color[value="7"] ~ .sheet-wrapper .sheet-rolls-color  {
    background: radial-gradient(ellipse at center, rgba(98,125,77,1) 0%,rgba(31,59,8,1) 100%);/*shamanism*/
@@ -1422,100 +1411,104 @@
 
   .charsheet input.sheet-rolls-color[value="8"] ~ .sheet-wrapper .sheet-rolls-color  {
    background: radial-gradient(ellipse at center, rgba(61,61,61,1) 0%,rgba(0,0,0,1) 98%);/*sorcery*/
-
  }
 
   .charsheet input.sheet-rolls-color[value="9"] ~ .sheet-wrapper .sheet-rolls-color  {
-   background: linear-gradient(135deg,  rgba(44,59,82,1) 13%,rgba(103,102,115,1) 36%,rgba(131,133,129,1) 61%,rgba(172,170,142,1) 80%,rgba(225,214,167,1) 95%);/*rainbow*/
-
+   background-color: #BDBFB4;/*JackBurble*/
  }
 
+ .charsheet input.sheet-rolls-color[value="10"] ~ .sheet-wrapper .sheet-rolls-color  {
+   background: linear-gradient(135deg, rgba(0,116,217,0.75) 0%,rgba(0,116,217,0.75) 30%,rgba(255,158,79,0.75) 80%,rgba(255,158,79,0.75) 100%); /*Colorblind friendly*/
+ }   
+   
+ .charsheet input.sheet-rolls-color[value="11"] ~ .sheet-wrapper .sheet-rolls-color  {
+  background: linear-gradient(135deg,  rgba(44,59,82,1) 13%,rgba(103,102,115,1) 36%,rgba(131,133,129,1) 61%,rgba(172,170,142,1) 80%,rgba(225,214,167,1) 95%); /*storm*/
+ }
    /* custom Abilities Tab colors */
    .charsheet input.sheet-abilities-color[value="1"] ~ .sheet-wrapper .sheet-abilities-color  {
    background: linear-gradient(135deg,  #ffa07a 4%,#ffa07a 5%,#faf0e6 5%,#faf0e6 7%,#ffa07a 7%,#dd4d4d 92%,#dd4d4d 93%,#faf0e6 93%,#faf0e6 95%,#dd4d4d 95%); /*Paia*/
-
  }
 
   .charsheet input.sheet-abilities-color[value="2"] ~ .sheet-wrapper .sheet-abilities-color  {
     background: -webkit-linear-gradient(-25deg, rgba(147, 112, 219, 1) 20%,rgba(52,201,102,.75) 100%);/*Destiny*/
-
  }
 
   .charsheet input.sheet-abilities-color[value="3"] ~ .sheet-wrapper .sheet-abilities-color  {
    background: linear-gradient(135deg, #ea9c1e 16%,#f86248 29%,#eb2801 41%,#ff6701 55%,#3f0c00 85%);/*fire*/
-
  }
    .charsheet input.sheet-abilities-color[value="4"] ~ .sheet-wrapper .sheet-abilities-color  {
    background: radial-gradient(ellipse at center, #ffffff 48%,#f0ead6 98%,#f0ead6 98%);/*adept*/
-
  }
 
   .charsheet input.sheet-abilities-color[value="5"] ~ .sheet-wrapper .sheet-abilities-color  {
    background: radial-gradient(ellipse at center, rgba(15,100,211,1) 0%,rgba(2,47,102,1) 100%);/*channeling*/
-
  }
 
   .charsheet input.sheet-abilities-color[value="6"] ~ .sheet-wrapper .sheet-abilities-color  {
    background: radial-gradient(ellipse at center, #a90329 0%,#8f0222 44%,#6d0019 100%); /*magecraft*/
-
  }
   .charsheet input.sheet-abilities-color[value="7"] ~ .sheet-wrapper .sheet-abilities-color  {
    background: radial-gradient(ellipse at center, rgba(98,125,77,1) 0%,rgba(31,59,8,1) 100%);/*shamanism*/
-
  }
 
   .charsheet input.sheet-abilities-color[value="8"] ~ .sheet-wrapper .sheet-abilities-color  {
    background: radial-gradient(ellipse at center, rgba(61,61,61,1) 0%,rgba(0,0,0,1) 98%);/*sorcery*/
-
  }
 
   .charsheet input.sheet-abilities-color[value="9"] ~ .sheet-wrapper .sheet-abilities-color  {
-   background: linear-gradient(135deg, #111111 6%,#ff0000 28%,#00ff00 54%,#2989d8 75%,#ffffff 93%);/*rainbow*/
-
+   background-color: #BDBFB4;/*JackBurble*/
  }
-  
+ .charsheet input.sheet-abilities-color[value="10"] ~ .sheet-wrapper .sheet-abilities-color  {
+   background: linear-gradient(135deg, rgba(0,116,217,0.75) 0%,rgba(0,116,217,0.75) 30%,rgba(255,158,79,0.75) 80%,rgba(255,158,79,0.75) 100%); /*Colorblind friendly*/
+ }
+ 
+  .charsheet input.sheet-abilities-color[value="11"] ~ .sheet-wrapper .sheet-abilities-color  {
+   background: linear-gradient(135deg,  rgba(44,59,82,1) 13%,rgba(103,102,115,1) 36%,rgba(131,133,129,1) 61%,rgba(172,170,142,1) 80%,rgba(225,214,167,1) 95%); /*storm*/
+ }
+ 
  /* custom Skills Tab colors */
-   .charsheet input.sheet-skills-color[value="1"] ~ .sheet-wrapper .sheet-skills-color  {
+  .charsheet input.sheet-skills-color[value="1"] ~ .sheet-wrapper .sheet-skills-color  {
    background: linear-gradient(135deg,  #ffa07a 4%,#ffa07a 5%,#faf0e6 5%,#faf0e6 7%,#ffa07a 7%,#dd4d4d 92%,#dd4d4d 93%,#faf0e6 93%,#faf0e6 95%,#dd4d4d 95%); /*Paia*/
-
  }
 
   .charsheet input.sheet-skills-color[value="2"] ~ .sheet-wrapper .sheet-skills-color  {
     background: -webkit-linear-gradient(-25deg, rgba(147, 112, 219, 1) 20%,rgba(52,201,102,.75) 100%);/*Destiny*/
-
  }
 
   .charsheet input.sheet-skills-color[value="3"] ~ .sheet-wrapper .sheet-skills-color  {
    background: linear-gradient(135deg, #ea9c1e 16%,#f86248 29%,#eb2801 41%,#ff6701 55%,#3f0c00 85%);/*fire*/
-
  }
+
    .charsheet input.sheet-skills-color[value="4"] ~ .sheet-wrapper .sheet-skills-color  {
    background: radial-gradient(ellipse at center, #ffffff 48%,#f0ead6 98%,#f0ead6 98%);/*adept*/
-
  }
 
   .charsheet input.sheet-skills-color[value="5"] ~ .sheet-wrapper .sheet-skills-color  {
    background: radial-gradient(ellipse at center, rgba(15,100,211,1) 0%,rgba(2,47,102,1) 100%);/*channeling*/
-
  }
 
   .charsheet input.sheet-skills-color[value="6"] ~ .sheet-wrapper .sheet-skills-color  {
    background: radial-gradient(ellipse at center, #a90329 0%,#8f0222 44%,#6d0019 100%); /*magecraft*/
-
  }
+
   .charsheet input.sheet-skills-color[value="7"] ~ .sheet-wrapper .sheet-skills-color  {
   background: radial-gradient(ellipse at center, rgba(98,125,77,1) 0%,rgba(31,59,8,1) 100%);/*shamanism*/
-
  }
 
   .charsheet input.sheet-skills-color[value="8"] ~ .sheet-wrapper .sheet-skills-color  {
    background: radial-gradient(ellipse at center, rgba(61,61,61,1) 0%,rgba(0,0,0,1) 98%);/*sorcery*/
-
  }
 
   .charsheet input.sheet-skills-color[value="9"] ~ .sheet-wrapper .sheet-skills-color  {
-   background: linear-gradient(135deg, #111111 6%,#ff0000 28%,#00ff00 54%,#2989d8 75%,#ffffff 93%);/*rainbow*/
+   background-color: #BDBFB4;/*JackBurble*/
+ }
 
+   .charsheet input.sheet-skills-color[value="10"] ~ .sheet-wrapper .sheet-skills-color  {
+    background: linear-gradient(135deg, rgba(0,116,217,0.75) 0%,rgba(0,116,217,0.75) 30%,rgba(255,158,79,0.75) 80%,rgba(255,158,79,0.75) 100%); /*Colorblind friendly*/
+ }
+
+  .charsheet input.sheet-skills-color[value="11"] ~ .sheet-wrapper .sheet-skills-color  {
+   background: linear-gradient(135deg,  rgba(44,59,82,1) 13%,rgba(103,102,115,1) 36%,rgba(131,133,129,1) 61%,rgba(172,170,142,1) 80%,rgba(225,214,167,1) 95%); /*storm*/
  }
 
      /* custom Benefits Tab colors */
@@ -1525,175 +1518,175 @@
 
   .charsheet input.sheet-benefits-color[value="2"] ~ .sheet-wrapper .sheet-benefits-color  {
     background: -webkit-linear-gradient(-25deg, rgba(147, 112, 219, 1) 20%,rgba(52,201,102,.75) 100%);/*Destiny*/
-
  }
 
   .charsheet input.sheet-benefits-color[value="3"] ~ .sheet-wrapper .sheet-benefits-color  {
    background: linear-gradient(135deg, #ea9c1e 16%,#f86248 29%,#eb2801 41%,#ff6701 55%,#3f0c00 85%);/*fire*/
-
  }
+
    .charsheet input.sheet-benefits-color[value="4"] ~ .sheet-wrapper .sheet-benefits-color  {
 	background: radial-gradient(ellipse at center, #ffffff 48%,#f0ead6 98%,#f0ead6 98%);/*adept*/
  }
 
   .charsheet input.sheet-benefits-color[value="5"] ~ .sheet-wrapper .sheet-benefits-color  {
    background: radial-gradient(ellipse at center, rgba(15,100,211,1) 0%,rgba(2,47,102,1) 100%);/*channeling*/
-
  }
 
   .charsheet input.sheet-benefits-color[value="6"] ~ .sheet-wrapper .sheet-benefits-color  {
    background: radial-gradient(ellipse at center, #a90329 0%,#8f0222 44%,#6d0019 100%); /*magecraft*/
-
  }
+
    .charsheet input.sheet-benefits-color[value="7"] ~ .sheet-wrapper .sheet-benefits-color  {
 	background: radial-gradient(ellipse at center, rgba(98,125,77,1) 0%,rgba(31,59,8,1) 100%);/*shamanism*/
  }
 
   .charsheet input.sheet-benefits-color[value="8"] ~ .sheet-wrapper .sheet-benefits-color  {
    background: radial-gradient(ellipse at center, rgba(61,61,61,1) 0%,rgba(0,0,0,1) 98%);/*sorcery*/
-
  }
 
   .charsheet input.sheet-benefits-color[value="9"] ~ .sheet-wrapper .sheet-benefits-color  {
-   background: linear-gradient(135deg, #111111 6%,#ff0000 28%,#00ff00 54%,#2989d8 75%,#ffffff 93%);/*rainbow*/
-
+   background-color: #BDBFB4;/*JackBurble*/
  }
     
+  .charsheet input.sheet-benefits-color[value="10"] ~ .sheet-wrapper .sheet-benefits-color  {
+   background: linear-gradient(135deg, rgba(0,116,217,0.75) 0%,rgba(0,116,217,0.75) 30%,rgba(255,158,79,0.75) 80%,rgba(255,158,79,0.75) 100%); /*Colorblind friendly*/
+ }
+
+  .charsheet input.sheet-benefits-color[value="11"] ~ .sheet-wrapper .sheet-benefits-color  {
+   background: linear-gradient(135deg,  rgba(44,59,82,1) 13%,rgba(103,102,115,1) 36%,rgba(131,133,129,1) 61%,rgba(172,170,142,1) 80%,rgba(225,214,167,1) 95%); /*storm*/
+ }
+  
   /* custom Items Tab colors */
    .charsheet input.sheet-items-color[value="1"] ~ .sheet-wrapper .sheet-items-color  {
 	background: linear-gradient(135deg,  #ffa07a 4%,#ffa07a 5%,#faf0e6 5%,#faf0e6 7%,#ffa07a 7%,#dd4d4d 92%,#dd4d4d 93%,#faf0e6 93%,#faf0e6 95%,#dd4d4d 95%); /*Paia*/
-
  }
 
   .charsheet input.sheet-items-color[value="2"] ~ .sheet-wrapper .sheet-items-color  {
     background: -webkit-linear-gradient(-25deg, rgba(147, 112, 219, 1) 20%,rgba(52,201,102,.75) 100%);/*Destiny*/
-
-
  }
 
   .charsheet input.sheet-items-color[value="3"] ~ .sheet-wrapper .sheet-items-color  {
    background: linear-gradient(135deg, #ea9c1e 16%,#f86248 29%,#eb2801 41%,#ff6701 55%,#3f0c00 85%);/*fire*/
-
  }
   .charsheet input.sheet-items-color[value="4"] ~ .sheet-wrapper .sheet-items-color  {
 	background: radial-gradient(ellipse at center, #ffffff 48%,#f0ead6 98%,#f0ead6 98%);/*adept*/
-
  }
 
   .charsheet input.sheet-items-color[value="5"] ~ .sheet-wrapper .sheet-items-color  {
    background: radial-gradient(ellipse at center, rgba(15,100,211,1) 0%,rgba(2,47,102,1) 100%);/*channeling*/
-
-
  }
 
   .charsheet input.sheet-items-color[value="6"] ~ .sheet-wrapper .sheet-items-color  {
    background: radial-gradient(ellipse at center, #a90329 0%,#8f0222 44%,#6d0019 100%); /*magecraft*/
-
  }
+
   .charsheet input.sheet-items-color[value="7"] ~ .sheet-wrapper .sheet-items-color  {
 	background: radial-gradient(ellipse at center, rgba(98,125,77,1) 0%,rgba(31,59,8,1) 100%);/*shamanism*/
-
  }
 
   .charsheet input.sheet-items-color[value="8"] ~ .sheet-wrapper .sheet-items-color  {
    background: radial-gradient(ellipse at center, rgba(61,61,61,1) 0%,rgba(0,0,0,1) 98%);/*sorcery*/
-
-
  }
 
   .charsheet input.sheet-items-color[value="9"] ~ .sheet-wrapper .sheet-items-color  {
-   background: linear-gradient(135deg, #111111 6%,#ff0000 28%,#00ff00 54%,#2989d8 75%,#ffffff 93%);/*rainbow*/
-
+   background-color: #BDBFB4;/*JackBurble*/
  }
  
+  .charsheet input.sheet-items-color[value="10"] ~ .sheet-wrapper .sheet-items-color  {
+   background: linear-gradient(135deg, rgba(0,116,217,0.75) 0%,rgba(0,116,217,0.75) 30%,rgba(255,158,79,0.75) 80%,rgba(255,158,79,0.75) 100%); /*Colorblind friendly*/
+ } 
+ 
+  .charsheet input.sheet-items-color[value="11"] ~ .sheet-wrapper .sheet-items-color  {
+   background: linear-gradient(135deg,  rgba(44,59,82,1) 13%,rgba(103,102,115,1) 36%,rgba(131,133,129,1) 61%,rgba(172,170,142,1) 80%,rgba(225,214,167,1) 95%); /*storm*/
+ } 
  /* custom XP Tab colors */
    .charsheet input.sheet-xp-color[value="1"] ~ .sheet-wrapper .sheet-xp-color  {
    background: linear-gradient(135deg,  #ffa07a 4%,#ffa07a 5%,#faf0e6 5%,#faf0e6 7%,#ffa07a 7%,#dd4d4d 92%,#dd4d4d 93%,#faf0e6 93%,#faf0e6 95%,#dd4d4d 95%); /*Paia*/
-
  }
 
   .charsheet input.sheet-xp-color[value="2"] ~ .sheet-wrapper .sheet-xp-color  {
     background: -webkit-linear-gradient(-25deg, rgba(147, 112, 219, 1) 20%,rgba(52,201,102,.75) 100%);/*Destiny*/
-
  }
 
   .charsheet input.sheet-xp-color[value="3"] ~ .sheet-wrapper .sheet-xp-color  {
    background: linear-gradient(135deg, #ea9c1e 16%,#f86248 29%,#eb2801 41%,#ff6701 55%,#3f0c00 85%);/*fire*/
-
  }
+
   .charsheet input.sheet-xp-color[value="4"] ~ .sheet-wrapper .sheet-xp-color  {
    background: radial-gradient(ellipse at center, #ffffff 48%,#f0ead6 98%,#f0ead6 98%);/*adept*/
-
  }
 
   .charsheet input.sheet-xp-color[value="5"] ~ .sheet-wrapper .sheet-xp-color  {
    background: radial-gradient(ellipse at center, rgba(15,100,211,1) 0%,rgba(2,47,102,1) 100%);/*channeling*/
-
  }
 
   .charsheet input.sheet-xp-color[value="6"] ~ .sheet-wrapper .sheet-xp-color  {
    background: radial-gradient(ellipse at center, #a90329 0%,#8f0222 44%,#6d0019 100%); /*magecraft*/
-
  }
+
   .charsheet input.sheet-xp-color[value="7"] ~ .sheet-wrapper .sheet-xp-color  {
    background: radial-gradient(ellipse at center, rgba(98,125,77,1) 0%,rgba(31,59,8,1) 100%);/*shamanism*/
-
  }
 
   .charsheet input.sheet-xp-color[value="8"] ~ .sheet-wrapper .sheet-xp-color  {
    background: radial-gradient(ellipse at center, rgba(61,61,61,1) 0%,rgba(0,0,0,1) 98%);/*sorcery*/
-
  }
 
   .charsheet input.sheet-xp-color[value="9"] ~ .sheet-wrapper .sheet-xp-color  {
-   background: linear-gradient(135deg, #111111 6%,#ff0000 28%,#00ff00 54%,#2989d8 75%,#ffffff 93%);/*rainbow*/
-
+   background-color: #BDBFB4;/*JackBurble*/
  }
        
+  .charsheet input.sheet-xp-color[value="10"] ~ .sheet-wrapper .sheet-xp-color  {
+   background: linear-gradient(135deg, rgba(0,116,217,0.75) 0%,rgba(0,116,217,0.75) 30%,rgba(255,158,79,0.75) 80%,rgba(255,158,79,0.75) 100%); /*Colorblind friendly*/
+ }
+
+  .charsheet input.sheet-xp-color[value="11"] ~ .sheet-wrapper .sheet-xp-color  {
+   background: linear-gradient(135deg,  rgba(44,59,82,1) 13%,rgba(103,102,115,1) 36%,rgba(131,133,129,1) 61%,rgba(172,170,142,1) 80%,rgba(225,214,167,1) 95%); /*storm*/
+ }
 	   /* custom Notes Tab colors */
    .charsheet input.sheet-notes-color[value="1"] ~ .sheet-wrapper .sheet-notes-color  {
    background: linear-gradient(135deg,  #ffa07a 4%,#ffa07a 5%,#faf0e6 5%,#faf0e6 7%,#ffa07a 7%,#dd4d4d 92%,#dd4d4d 93%,#faf0e6 93%,#faf0e6 95%,#dd4d4d 95%); /*Paia*/
-
  }
 
   .charsheet input.sheet-notes-color[value="2"] ~ .sheet-wrapper .sheet-notes-color  {
     background: -webkit-linear-gradient(-25deg, rgba(147, 112, 219, 1) 20%,rgba(52,201,102,.75) 100%);/*Destiny*/
-
  }
 
   .charsheet input.sheet-notes-color[value="3"] ~ .sheet-wrapper .sheet-notes-color  {
    background: linear-gradient(135deg, #ea9c1e 16%,#f86248 29%,#eb2801 41%,#ff6701 55%,#3f0c00 85%);/*fire*/
-   
  }
+
   .charsheet input.sheet-notes-color[value="4"] ~ .sheet-wrapper .sheet-notes-color  {
    background: radial-gradient(ellipse at center, #ffffff 48%,#f0ead6 98%,#f0ead6 98%);/*adept*/
-
  }
 
   .charsheet input.sheet-notes-color[value="5"] ~ .sheet-wrapper .sheet-notes-color  {
    background: radial-gradient(ellipse at center, rgba(15,100,211,1) 0%,rgba(2,47,102,1) 100%);/*channeling*/
-
  }
 
   .charsheet input.sheet-notes-color[value="6"] ~ .sheet-wrapper .sheet-notes-color  {
-   background: radial-gradient(ellipse at center, #a90329 0%,#8f0222 44%,#6d0019 100%); /*magecraft*/
-   
+   background: radial-gradient(ellipse at center, #a90329 0%,#8f0222 44%,#6d0019 100%); /*magecraft*/ 
  }
+
    .charsheet input.sheet-notes-color[value="7"] ~ .sheet-wrapper .sheet-notes-color  {
    background: radial-gradient(ellipse at center, rgba(98,125,77,1) 0%,rgba(31,59,8,1) 100%);/*shamanism*/
-
  }
 
   .charsheet input.sheet-notes-color[value="8"] ~ .sheet-wrapper .sheet-notes-color  {
    background: radial-gradient(ellipse at center, rgba(61,61,61,1) 0%,rgba(0,0,0,1) 98%);/*sorcery*/
-
  }
 
   .charsheet input.sheet-notes-color[value="9"] ~ .sheet-wrapper .sheet-notes-color  {
-   background: linear-gradient(135deg, #111111 6%,#ff0000 28%,#00ff00 54%,#2989d8 75%,#ffffff 93%);/*rainbow*/
-   
+   background-color: #BDBFB4;/*JackBurble*/  
  }
-  
+   .charsheet input.sheet-notes-color[value="10"] ~ .sheet-wrapper .sheet-notes-color  {
+   background: linear-gradient(135deg, rgba(0,116,217,0.75) 0%,rgba(0,116,217,0.75) 30%,rgba(255,158,79,0.75) 80%,rgba(255,158,79,0.75) 100%); /*Colorblind friendly*/
+ }
+
+  .charsheet input.sheet-notes-color[value="11"] ~ .sheet-wrapper .sheet-notes-color  {
+   background: linear-gradient(135deg,  rgba(44,59,82,1) 13%,rgba(103,102,115,1) 36%,rgba(131,133,129,1) 61%,rgba(172,170,142,1) 80%,rgba(225,214,167,1) 95%); /*storm*/
+ }
+
   /* custom Stats Tab border */ 
  .charsheet input.sheet-stats-border[value="1"] ~ .sheet-wrapper .sheet-stats-border  {
 	border-color: navy;
@@ -1715,7 +1708,7 @@
  }
 
   .charsheet input.sheet-stats-border[value="6"] ~ .sheet-wrapper .sheet-stats-border  {
-	border-color: fuchsia;
+	border-color: #4A1E07;
  } 
   .charsheet input.sheet-stats-border[value="7"] ~ .sheet-wrapper .sheet-stats-border  {
 	border-color: maroon;
@@ -1729,7 +1722,7 @@
 	border-color: #FF851B;
  }
  .charsheet input.sheet-stats-border[value="10"] ~ .sheet-wrapper .sheet-stats-border  {
-	border-color: yellow;
+	border-color: #FFBF00;
  }
 
   .charsheet input.sheet-stats-border[value="11"] ~ .sheet-wrapper .sheet-stats-border  {
@@ -1779,7 +1772,7 @@
  }
 
   .charsheet input.sheet-rolls-border[value="6"] ~ .sheet-wrapper .sheet-rolls-border  {
-	border-color: fuchsia;
+	border-color: #4A1E07;
  } 
   .charsheet input.sheet-rolls-border[value="7"] ~ .sheet-wrapper .sheet-rolls-border  {
 	border-color: maroon;
@@ -1793,7 +1786,7 @@
 	border-color: #FF851B;
  }
  .charsheet input.sheet-rolls-border[value="10"] ~ .sheet-wrapper .sheet-rolls-border  {
-	border-color: yellow;
+	border-color: #FFBF00;
  }
 
   .charsheet input.sheet-rolls-border[value="11"] ~ .sheet-wrapper .sheet-rolls-border  {
@@ -1842,7 +1835,7 @@
  }
 
   .charsheet input.sheet-abilities-border[value="6"] ~ .sheet-wrapper .sheet-abilities-border  {
-	border-color: fuchsia;
+	border-color:#4A1E07;
  } 
   .charsheet input.sheet-abilities-border[value="7"] ~ .sheet-wrapper .sheet-abilities-border  {
 	border-color: maroon;
@@ -1856,7 +1849,7 @@
 	border-color: #FF851B;
  }
  .charsheet input.sheet-abilities-border[value="10"] ~ .sheet-wrapper .sheet-abilities-border  {
-	border-color: yellow;
+	border-color: #FFBF00;
  }
 
   .charsheet input.sheet-abilities-border[value="11"] ~ .sheet-wrapper .sheet-abilities-border  {
@@ -1905,7 +1898,7 @@
  }
 
   .charsheet input.sheet-skills-border[value="6"] ~ .sheet-wrapper .sheet-skills-border  {
-	border-color: fuchsia;
+	border-color: #4A1E07;
  } 
   .charsheet input.sheet-skills-border[value="7"] ~ .sheet-wrapper .sheet-skills-border  {
 	border-color: maroon;
@@ -1919,7 +1912,7 @@
 	border-color: #FF851B;
  }
  .charsheet input.sheet-skills-border[value="10"] ~ .sheet-wrapper .sheet-skills-border  {
-	border-color: yellow;
+	border-color: #FFBF00;
  }
 
   .charsheet input.sheet-skills-border[value="11"] ~ .sheet-wrapper .sheet-skills-border  {
@@ -1968,7 +1961,7 @@
  }
 
   .charsheet input.sheet-benefits-border[value="6"] ~ .sheet-wrapper .sheet-benefits-border  {
-	border-color: fuchsia;
+	border-color: #4A1E07;
  } 
   .charsheet input.sheet-benefits-border[value="7"] ~ .sheet-wrapper .sheet-benefits-border  {
 	border-color: maroon;
@@ -1982,7 +1975,7 @@
 	border-color: #FF851B;
  }
  .charsheet input.sheet-benefits-border[value="10"] ~ .sheet-wrapper .sheet-benefits-border  {
-	border-color: yellow;
+	border-color: #FFBF00;
  }
 
   .charsheet input.sheet-benefits-border[value="11"] ~ .sheet-wrapper .sheet-benefits-border  {
@@ -2031,7 +2024,7 @@
  }
 
   .charsheet input.sheet-items-border[value="6"] ~ .sheet-wrapper .sheet-items-border  {
-	border-color: fuchsia;
+	border-color: #4A1E07;
  } 
   .charsheet input.sheet-items-border[value="7"] ~ .sheet-wrapper .sheet-items-border  {
 	border-color: maroon;
@@ -2045,7 +2038,7 @@
 	border-color: #FF851B;
  }
  .charsheet input.sheet-items-border[value="10"] ~ .sheet-wrapper .sheet-items-border  {
-	border-color: yellow;
+	border-color: #FFBF00;
  }
 
   .charsheet input.sheet-items-border[value="11"] ~ .sheet-wrapper .sheet-items-border  {
@@ -2094,7 +2087,7 @@
  }
 
   .charsheet input.sheet-xp-border[value="6"] ~ .sheet-wrapper .sheet-xp-border  {
-	border-color: fuchsia;
+	border-color: #4A1E07;
  } 
   .charsheet input.sheet-xp-border[value="7"] ~ .sheet-wrapper .sheet-xp-border  {
 	border-color: maroon;
@@ -2108,7 +2101,7 @@
 	border-color: #FF851B;
  }
  .charsheet input.sheet-xp-border[value="10"] ~ .sheet-wrapper .sheet-xp-border  {
-	border-color: yellow;
+	border-color: #FFBF00;
  }
 
   .charsheet input.sheet-xp-border[value="11"] ~ .sheet-wrapper .sheet-xp-border  {
@@ -2157,7 +2150,7 @@
  }
 
   .charsheet input.sheet-notes-border[value="6"] ~ .sheet-wrapper .sheet-notes-border  {
-	border-color: fuchsia;
+	border-color: #4A1E07;
  } 
   .charsheet input.sheet-notes-border[value="7"] ~ .sheet-wrapper .sheet-notes-border  {
 	border-color: maroon;
@@ -2171,7 +2164,7 @@
 	border-color: #FF851B;
  }
  .charsheet input.sheet-notes-border[value="10"] ~ .sheet-wrapper .sheet-notes-border  {
-	border-color: yellow;
+	border-color: #FFBF00;
  }
 
   .charsheet input.sheet-notes-border[value="11"] ~ .sheet-wrapper .sheet-notes-border  {
@@ -2220,7 +2213,7 @@
  }
 
   .charsheet input.sheet-options-text[value="6"] ~ .sheet-wrapper .sheet-options-text  {
-	color: fuchsia;
+	color: #4A1E07;
  } 
   .charsheet input.sheet-options-text[value="7"] ~ .sheet-wrapper .sheet-options-text  {
 	color: maroon;
@@ -2234,7 +2227,7 @@
 	color: #FF851B;
  }
  .charsheet input.sheet-options-text[value="10"] ~ .sheet-wrapper .sheet-options-text  {
-	color: yellow;
+	color: #FFBF00;
  }
 
   .charsheet input.sheet-options-text[value="11"] ~ .sheet-wrapper .sheet-options-text  {
@@ -2283,7 +2276,7 @@
  }
 
   .charsheet input.sheet-stats-text[value="6"] ~ .sheet-wrapper .sheet-stats-text  {
-	color: fuchsia;
+	color: #4A1E07;
  } 
   .charsheet input.sheet-stats-text[value="7"] ~ .sheet-wrapper .sheet-stats-text  {
 	color: maroon;
@@ -2297,7 +2290,7 @@
 	color: #FF851B;
  }
  .charsheet input.sheet-stats-text[value="10"] ~ .sheet-wrapper .sheet-stats-text  {
-	color: yellow;
+	color: #FFBF00;
  }
 
   .charsheet input.sheet-stats-text[value="11"] ~ .sheet-wrapper .sheet-stats-text  {
@@ -2347,7 +2340,7 @@
  }
 
   .charsheet input.sheet-rolls-text[value="6"] ~ .sheet-wrapper .sheet-rolls-text  {
-	color: fuchsia;
+	color: #4A1E07;
  } 
   .charsheet input.sheet-rolls-text[value="7"] ~ .sheet-wrapper .sheet-rolls-text  {
 	color: maroon;
@@ -2361,7 +2354,7 @@
 	color: #FF851B;
  }
  .charsheet input.sheet-rolls-text[value="10"] ~ .sheet-wrapper .sheet-rolls-text  {
-	color: yellow;
+	color: #FFBF00;
  }
 
   .charsheet input.sheet-rolls-text[value="11"] ~ .sheet-wrapper .sheet-rolls-text  {
@@ -2410,7 +2403,7 @@
  }
 
   .charsheet input.sheet-abilities-text[value="6"] ~ .sheet-wrapper .sheet-abilities-text  {
-	color: fuchsia;
+	color: #4A1E07;
  } 
   .charsheet input.sheet-abilities-text[value="7"] ~ .sheet-wrapper .sheet-abilities-text  {
 	color: maroon;
@@ -2424,7 +2417,7 @@
 	color: #FF851B;
  }
  .charsheet input.sheet-abilities-text[value="10"] ~ .sheet-wrapper .sheet-abilities-text  {
-	color: yellow;
+	color: #FFBF00;
  }
 
   .charsheet input.sheet-abilities-text[value="11"] ~ .sheet-wrapper .sheet-abilities-text  {
@@ -2473,7 +2466,7 @@
  }
 
   .charsheet input.sheet-skills-text[value="6"] ~ .sheet-wrapper .sheet-skills-text  {
-	color: fuchsia;
+	color: #4A1E07;
  } 
   .charsheet input.sheet-skills-text[value="7"] ~ .sheet-wrapper .sheet-skills-text  {
 	color: maroon;
@@ -2487,7 +2480,7 @@
 	color: #FF851B;
  }
  .charsheet input.sheet-skills-text[value="10"] ~ .sheet-wrapper .sheet-skills-text  {
-	color: yellow;
+	color: #FFBF00;
  }
 
   .charsheet input.sheet-skills-text[value="11"] ~ .sheet-wrapper .sheet-skills-text  {
@@ -2536,7 +2529,7 @@
  }
 
   .charsheet input.sheet-benefits-text[value="6"] ~ .sheet-wrapper .sheet-benefits-text  {
-	color: fuchsia;
+	color: #4A1E07;
  } 
   .charsheet input.sheet-benefits-text[value="7"] ~ .sheet-wrapper .sheet-benefits-text  {
 	color: maroon;
@@ -2550,7 +2543,7 @@
 	color: #FF851B;
  }
  .charsheet input.sheet-benefits-text[value="10"] ~ .sheet-wrapper .sheet-benefits-text  {
-	color: yellow;
+	color: #FFBF00;
  }
 
   .charsheet input.sheet-benefits-text[value="11"] ~ .sheet-wrapper .sheet-benefits-text  {
@@ -2599,7 +2592,7 @@
  }
 
   .charsheet input.sheet-items-text[value="6"] ~ .sheet-wrapper .sheet-items-text  {
-	color: fuchsia;
+	color: #4A1E07;
  } 
   .charsheet input.sheet-items-text[value="7"] ~ .sheet-wrapper .sheet-items-text  {
 	color: maroon;
@@ -2613,7 +2606,7 @@
 	color: #FF851B;
  }
  .charsheet input.sheet-items-text[value="10"] ~ .sheet-wrapper .sheet-items-text  {
-	color: yellow;
+	color: #FFBF00;
  }
 
   .charsheet input.sheet-items-text[value="11"] ~ .sheet-wrapper .sheet-items-text  {
@@ -2662,7 +2655,7 @@
  }
 
   .charsheet input.sheet-xp-text[value="6"] ~ .sheet-wrapper .sheet-xp-text  {
-	color: fuchsia;
+	color: #4A1E07;
  } 
   .charsheet input.sheet-xp-text[value="7"] ~ .sheet-wrapper .sheet-xp-text  {
 	color: maroon;
@@ -2676,7 +2669,7 @@
 	color: #FF851B;
  }
  .charsheet input.sheet-xp-text[value="10"] ~ .sheet-wrapper .sheet-xp-text  {
-	color: yellow;
+	color: #FFBF00;
  }
 
   .charsheet input.sheet-xp-text[value="11"] ~ .sheet-wrapper .sheet-xp-text  {
@@ -2705,64 +2698,65 @@
 	color: white;
  }
         /* custom Notes Tab text */
- .charsheet input.sheet-notes-text[value="1"] ~ .sheet-wrapper .sheet-notes-text  {
+ .charsheet input.sheet-notes-text[value="1"] ~ .sheet-wrapper .sheet-notes-text * {
 	color: navy;
  }
 
-  .charsheet input.sheet-notes-text[value="2"] ~ .sheet-wrapper .sheet-notes-text  {
+  .charsheet input.sheet-notes-text[value="2"] ~ .sheet-wrapper .sheet-notes-text * {
 	color: blue;
  }
 
-  .charsheet input.sheet-notes-text[value="3"] ~ .sheet-wrapper .sheet-notes-text  {
+  .charsheet input.sheet-notes-text[value="3"] ~ .sheet-wrapper .sheet-notes-text * {
 	color: aqua;
  }
- .charsheet input.sheet-notes-text[value="4"] ~ .sheet-wrapper .sheet-notes-text {
+ .charsheet input.sheet-notes-text[value="4"] ~ .sheet-wrapper .sheet-notes-text *{
 	color: teal;
  }
 
-  .charsheet input.sheet-notes-text[value="5"] ~ .sheet-wrapper .sheet-notes-text  {
+  .charsheet input.sheet-notes-text[value="5"] ~ .sheet-wrapper .sheet-notes-text * {
+	--notescolor: purple;
 	color: purple;
  }
 
-  .charsheet input.sheet-notes-text[value="6"] ~ .sheet-wrapper .sheet-notes-text  {
-	color: fuchsia;
+  .charsheet input.sheet-notes-text[value="6"] ~ .sheet-wrapper .sheet-notes-text * {
+	color: #4A1E07;
  } 
-  .charsheet input.sheet-notes-text[value="7"] ~ .sheet-wrapper .sheet-notes-text  {
+  .charsheet input.sheet-notes-text[value="7"] ~ .sheet-wrapper .sheet-notes-text * {
 	color: maroon;
  }
 
-  .charsheet input.sheet-notes-text[value="8"] ~ .sheet-wrapper .sheet-notes-text  {
+  .charsheet input.sheet-notes-text[value="8"] ~ .sheet-wrapper .sheet-notes-text * {
 	color: red;
  }
 
-  .charsheet input.sheet-notes-text[value="9"] ~ .sheet-wrapper .sheet-notes-text  {
+  .charsheet input.sheet-notes-text[value="9"] ~ .sheet-wrapper .sheet-notes-text * {
 	color: #FF851B;
  }
- .charsheet input.sheet-notes-text[value="10"] ~ .sheet-wrapper .sheet-notes-text  {
-	color: yellow;
+ .charsheet input.sheet-notes-text[value="10"] ~ .sheet-wrapper .sheet-notes-text * {
+	color: #FFBF00;
  }
 
-  .charsheet input.sheet-notes-text[value="11"] ~ .sheet-wrapper .sheet-notes-text  {
+  .charsheet input.sheet-notes-text[value="11"] ~ .sheet-wrapper .sheet-notes-text * {
 	color: olive;
  }
 
-  .charsheet input.sheet-notes-text[value="12"] ~ .sheet-wrapper .sheet-notes-text  {
+  .charsheet input.sheet-notes-text[value="12"] ~ .sheet-wrapper .sheet-notes-text * {
 	color: green;
  }
- .charsheet input.sheet-notes-text[value="13"] ~ .sheet-wrapper .sheet-notes-text  {
+ .charsheet input.sheet-notes-text[value="13"] ~ .sheet-wrapper .sheet-notes-text * {
 	color: lime;
  }
 
-  .charsheet input.sheet-notes-text[value="14"] ~ .sheet-wrapper .sheet-notes-text  {
+  .charsheet input.sheet-notes-text[value="14"] ~ .sheet-wrapper .sheet-notes-text * {
 	color: #111111;
  }
 
-  .charsheet input.sheet-notes-text[value="15"] ~ .sheet-wrapper .sheet-notes-text  {
+  .charsheet input.sheet-notes-text[value="15"] ~ .sheet-wrapper .sheet-notes-text * {
 	color: #AAAAAA;
  } 
-  .charsheet input.sheet-notes-text[value="16"] ~ .sheet-wrapper .sheet-notes-text  {
+  .charsheet input.sheet-notes-text[value="16"] ~ .sheet-wrapper .sheet-notes-text * {
 	color: silver;
  }
 
-  .charsheet input.sheet-notes-text[value="17"] ~ .sheet-wrapper .sheet-notes-text  {
+  .charsheet input.sheet-notes-text[value="17"] ~ .sheet-wrapper .sheet-notes-text * {
 	color: white;
