@@ -969,7 +969,6 @@
      border: 1px solid var(--highlight-text);
      height: 100%;
      font-family: var(--fonts);
-     color: var(--simple-text);
      border-radius: 0px;
      margin: 0px;
      padding: 2px 4px 2px 4px;
@@ -1384,7 +1383,8 @@
  }
 
   .charsheet input.sheet-stats-color[value="9"] ~ .sheet-wrapper .sheet-stats-color  {
-    background: linear-gradient(135deg, #111111 6%,#ff0000 28%,#00ff00 54%,#2989d8 75%,#ffffff 93%);/*rainbow*/
+   background: radial-gradient(ellipse at center,  rgba(123,33,50,1) 41%,rgba(42,57,71,1) 82%,rgba(42,57,71,1) 86%,rgba(198,141,79,1) 87%,rgba(198,141,79,1) 87%,rgba(234,185,86,1) 89%,rgba(234,185,86,1) 89%,rgba(239,228,186,1) 90%,rgba(239,228,186,1) 90%,rgba(239,228,186,1) 90%,rgba(198,141,79,1) 92%,rgba(198,141,79,1) 92%,rgba(42,57,71,1) 92%,rgba(42,57,71,1) 100%);
+
 
  } 
   /* custom Rolls Tab colors */
@@ -1426,7 +1426,7 @@
  }
 
   .charsheet input.sheet-rolls-color[value="9"] ~ .sheet-wrapper .sheet-rolls-color  {
-   background: linear-gradient(135deg, #111111 6%,#ff0000 28%,#00ff00 54%,#2989d8 75%,#ffffff 93%);/*rainbow*/
+   background: linear-gradient(135deg,  rgba(44,59,82,1) 13%,rgba(103,102,115,1) 36%,rgba(131,133,129,1) 61%,rgba(172,170,142,1) 80%,rgba(225,214,167,1) 95%);/*rainbow*/
 
  }
 
